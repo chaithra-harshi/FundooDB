@@ -1,0 +1,17 @@
+spring:
+  profiles: development
+mail:
+  username: ${email}
+  password: ${pass}
+
+aws:
+    access:
+     key:
+       id: ${aws.keyId}
+       secret: ${aws.accessKey}
+    region: ${aws.region}
+    s3:
+       sona:
+         bucket: ${aws.bucket.name}
+       client: ${awsS3Client}
+        
