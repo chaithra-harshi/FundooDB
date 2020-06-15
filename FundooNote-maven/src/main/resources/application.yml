@@ -1,0 +1,20 @@
+spring:
+ application:
+   name: User-Services
+ #datasource:
+  #  username: ${dbuser}
+   # password: ${dbpass}
+ mail:
+    username: ${Email}
+    password: ${Password}
+aws:
+    access:
+     key:
+       id: ${awsKeyId}
+       secret: ${accessKey}
+    region: ${region}
+    s3:
+       sona:
+         bucket: ${bucket}
+       client: ${awsS3Client}
+    
